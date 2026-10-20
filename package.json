@@ -7,7 +7,8 @@
   "scripts": {
     "snap": "node tools/snap.mjs",
     "render": "node tools/render.mjs",
-    "serve": "node tools/serve.mjs"
+    "serve": "node tools/serve.mjs",
+    "audio": "node tools/fetch-audio.mjs && node tools/soundtrack.mjs"
   },
   "devDependencies": {
     "puppeteer-core": "^24.10.0"

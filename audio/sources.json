@@ -1,0 +1,56 @@
+{
+  "note": "Licensed audio used by the soundtrack. The files are not redistributed in this repository; run `node tools/fetch-audio.mjs` to download them into audio/cache/.",
+  "licenses": {
+    "pixabay": "Pixabay Content License (https://pixabay.com/service/license-summary/): free for commercial and non-commercial use, no attribution required; may not be redistributed as a standalone file.",
+    "mixkit-sfx": "Mixkit Sound Effects Free License (https://mixkit.co/license/#sfxFree): free for commercial and non-commercial projects, no attribution required; may not be redistributed as a standalone file."
+  },
+  "files": {
+    "music-fairy-tale": { "title": "Fairy Tale", "author": "Music_For_Videos", "page": "https://pixabay.com/music/fantasy-dreamy-childrens-fairy-tale-164242/", "url": "https://cdn.pixabay.com/download/audio/2023/08/29/audio_7b57bf8a25.mp3", "license": "pixabay", "ext": "mp3" },
+
+    "river-birds": { "title": "Birds chirping near the river", "mixkit": 2473, "license": "mixkit-sfx" },
+    "river-sunrise": { "title": "Atmosphere of a river at sunrise", "mixkit": 2458, "license": "mixkit-sfx" },
+    "river-crickets": { "title": "Crickets by the river", "mixkit": 2460, "license": "mixkit-sfx" },
+    "night-forest": { "title": "Summer night in the forest", "mixkit": 1227, "license": "mixkit-sfx" },
+    "night-crickets": { "title": "Summer night crickets loop", "mixkit": 1789, "license": "mixkit-sfx" },
+    "waterfall-large": { "title": "Large waterfall loop", "mixkit": 3030, "license": "mixkit-sfx" },
+    "waterfall-woods": { "title": "Waterfall in the woods", "mixkit": 2517, "license": "mixkit-sfx" },
+    "mountain-wind": { "title": "Wind in the top of the mountain", "mixkit": 1267, "license": "mixkit-sfx" },
+    "meadow-wind": { "title": "Meadow wind light", "mixkit": 1166, "license": "mixkit-sfx" },
+    "cavern": { "title": "Damp cavern ambience", "mixkit": 2499, "license": "mixkit-sfx" },
+    "cave-drip": { "title": "Water drop splashes in cave", "mixkit": 3179, "license": "mixkit-sfx" },
+    "storm-rain": { "title": "Heavy rain storm", "mixkit": 1257, "license": "mixkit-sfx" },
+    "stormy-sea": { "title": "Stormy sea waves loop", "mixkit": 1199, "license": "mixkit-sfx" },
+    "thunder-close": { "title": "Strong close thunder explosion", "mixkit": 1300, "license": "mixkit-sfx" },
+    "thunder-single": { "title": "Mid strength single thunder", "mixkit": 1298, "license": "mixkit-sfx" },
+    "thunder-rumble": { "title": "Big thunder rumble", "mixkit": 1297, "license": "mixkit-sfx" },
+    "morning-birds": { "title": "Morning birds singing", "mixkit": 2467, "license": "mixkit-sfx" },
+
+    "star-glow": { "title": "Sparkling fairy glow", "mixkit": 870, "license": "mixkit-sfx" },
+    "icicles-thin": { "title": "Thin icicles spell", "mixkit": 882, "license": "mixkit-sfx" },
+    "icicles-whoosh": { "title": "Icicles spell whoosh", "mixkit": 881, "license": "mixkit-sfx" },
+    "glitter": { "title": "Magic glitter or particles", "mixkit": 2352, "license": "mixkit-sfx" },
+    "aura": { "title": "Magical light aura", "mixkit": 2581, "license": "mixkit-sfx" },
+    "sparkle-whoosh": { "title": "Magic sparkle whoosh", "mixkit": 2350, "license": "mixkit-sfx" },
+    "spell-of-light": { "title": "Magic spell of light", "mixkit": 2588, "license": "mixkit-sfx" },
+    "fairy-bell": { "title": "Fairy bell bless", "mixkit": 864, "license": "mixkit-sfx" },
+
+    "windy-swoosh": { "title": "Transition windy swoosh", "mixkit": 1474, "license": "mixkit-sfx" },
+    "breeze-trees": { "title": "Breeze through the trees", "mixkit": 2427, "license": "mixkit-sfx" },
+    "leaves": { "title": "Dry leaves rustling", "mixkit": 2430, "license": "mixkit-sfx" },
+    "air-woosh": { "title": "Air woosh", "mixkit": 1489, "license": "mixkit-sfx" },
+    "deep-woosh": { "title": "Deep air woosh", "mixkit": 2604, "license": "mixkit-sfx" },
+    "ending-swoosh": { "title": "Ending wind swoosh", "mixkit": 1482, "license": "mixkit-sfx" },
+    "wind-magic": { "title": "Wind magic whoosh", "mixkit": 2610, "license": "mixkit-sfx" },
+    "ghostly-whoosh": { "title": "Ghostly whoosh passing", "mixkit": 2623, "license": "mixkit-sfx" },
+    "stone-slide": { "title": "Magical stone slide", "mixkit": 1528, "license": "mixkit-sfx" },
+    "stones-falling": { "title": "Stones and rocks falling", "mixkit": 400, "license": "mixkit-sfx" },
+    "light-transition": { "title": "Magical light transition", "mixkit": 2583, "license": "mixkit-sfx" },
+    "impact-waves": { "title": "Cinematic impact waves", "mixkit": 781, "license": "mixkit-sfx" },
+    "water-splash": { "title": "Sea water splash", "mixkit": 1198, "license": "mixkit-sfx" },
+    "page-turn-big": { "title": "Big paper page turn", "mixkit": 1105, "license": "mixkit-sfx" },
+    "page-turn": { "title": "Page turn single", "mixkit": 1104, "license": "mixkit-sfx" },
+    "pages-moving": { "title": "Pages of paper moving", "mixkit": 2386, "license": "mixkit-sfx" },
+    "paper-slide": { "title": "Paper slide", "mixkit": 1530, "license": "mixkit-sfx" },
+    "light-sweep": { "title": "Magical light sweep", "mixkit": 2586, "license": "mixkit-sfx" }
+  }
+}

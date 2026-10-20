@@ -5,10 +5,11 @@ A one-minute layered paper-cut film, drawn and animated entirely in code.
 A fox follows a guiding star through ten worlds: a dusk bridge, a moonlit lake, a
 firefly forest, a waterfall canyon, snowy peaks, a crystal cave, a storm coast, an
 aurora arch, a star portal, and finally dawn. Every frame is built from paper cut-outs
-that are generated at runtime. The film loads no image files, textures, fonts or audio
-samples: the paper fibre, the crumpled sky, every fur tuft, leaf, petal and wave, and
-the soundtrack are all procedural. (The only images in this repository are stills
-rendered from the film for this page.)
+that are generated at runtime. The picture uses no image files, textures or fonts: the
+paper fibre, the crumpled sky, every fur tuft, leaf, petal and wave are procedural.
+(The only images in this repository are stills rendered from the film for this page.)
+The soundtrack is a licensed orchestral track with recorded sound effects, mixed in
+code to the film's timeline.
 
 ![Paper Fox](docs/media/poster.jpg)
 
@@ -58,11 +59,23 @@ behind something from the story world, so the fox is never seen twice:
 | aurora → portal | pop-up book: the cut-outs fold flat and the next world pops up |
 | portal → dawn | the portal's light floods the frame and settles into the sunrise |
 
-**Soundtrack** (`tools/audio`). Synthesized from scratch in JavaScript: a music-box
-lullaby in D major with felt piano, pads, choir, harp and crystal bells, plus river,
-crickets, wind, rain, thunder, waves and birds, and a motivated sound for every
-transition. It reads the same timeline and cue list as the picture, so lightning and
-thunder, the star appearing and its chime stay locked.
+**Soundtrack** (`tools/soundtrack.mjs`). Music and recorded sound effects placed by a
+cue sheet written in film seconds, from the same timeline and story cues as the
+picture, so every sound sits on what causes it:
+
+- the music's 8-bar intro opens the film; one edit, hidden behind the closing redwood
+  curtains, jumps to its breakdown, so the second build rises through the cave and
+  the storm and the full climax lands the moment the wave reveals the aurora;
+- one ambience bed per world (river birds, crickets, night forest, waterfall, mountain
+  wind, cavern drips, rainstorm and surf, meadow wind, morning birds), crossfaded across
+  each transition;
+- story moments (the star appearing, crystals waking, three thunder strikes on the
+  lightning, the portal opening, the star-flower blooming) and one sound per
+  transition: wind past the pine, rustling branches, trunk swooshes, a wind swell
+  through the clouds, sliding stone, a light swell, a wave impact, turning pages,
+  a light sweep.
+
+The mix is mastered to -14 LUFS with a -1.5 dBTP ceiling.
 
 ## Running it
 
@@ -82,10 +95,15 @@ node tools/serve.mjs
 Then open `http://localhost:5173/` for the film, `?scene=s04` for one scene or
 `?gallery=fox` for an element test sheet.
 
-Render the soundtrack and the film (1920x1080, 60 fps, H.264 + AAC):
+Fetch the licensed audio (listed with sources in `audio/sources.json`), mix the
+soundtrack, and render the film (1920x1080, 60 fps, H.264 + AAC):
 
 ```bash
-node tools/audio.mjs
+node tools/fetch-audio.mjs
+```
+
+```bash
+node tools/soundtrack.mjs
 ```
 
 ```bash
@@ -117,7 +135,8 @@ src/elements   reusable paper elements (fox, trees, flora, sky, clouds, terrain,
 src/scenes     the ten dioramas
 src/film       timeline, cues, transitions and their props
 src/gallery    element test sheets
-tools          headless rendering, soundtrack synthesis, review tools
+tools          headless rendering, soundtrack mixing, review tools
+audio          sources.json: the licensed music and sound effects (files are fetched, not stored)
 docs           engine guide and element API references
 ```
 
@@ -126,4 +145,10 @@ docs           engine guide and element API references
 Built with Claude Code. The look recreates a set of AI-generated paper-cut
 illustrations that were used only as visual reference; none of them are included here.
 
-MIT licensed.
+Music: "Fairy Tale" by Music_For_Videos, via
+[Pixabay](https://pixabay.com/music/fantasy-dreamy-childrens-fairy-tale-164242/)
+(Pixabay Content License). Sound effects from [Mixkit](https://mixkit.co/free-sound-effects/)
+(Mixkit Sound Effects Free License); the full list is in `audio/sources.json`. The audio
+files are not redistributed here.
+
+Code is MIT licensed; the license does not extend to the third-party audio.
