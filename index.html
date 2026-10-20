@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paper Fox</title>
+  <link rel="icon" href="data:,">
+  <style>
+    html, body { margin: 0; height: 100%; background: #0b0d16; }
+    body { display: grid; place-items: center; overflow: hidden; }
+    #stage { width: 100vw; height: 56.25vw; max-height: 100vh; max-width: 177.78vh; display: block; }
+    #hud { position: fixed; left: 12px; bottom: 10px; font: 12px/1 ui-monospace, monospace; color: #8a90a8; }
+    body.capture #hud { display: none; }
+  </style>
+</head>
+<body>
+  <canvas id="stage" width="1920" height="1080"></canvas>
+  <div id="hud"></div>
+  <script>
+    if (new URLSearchParams(location.search).has('capture')) document.body.classList.add('capture');
+  </script>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>

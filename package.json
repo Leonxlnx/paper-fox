@@ -1,0 +1,16 @@
+{
+  "name": "paper-fox",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A one-minute layered paper-cut film, drawn and animated entirely in code.",
+  "type": "module",
+  "scripts": {
+    "snap": "node tools/snap.mjs",
+    "render": "node tools/render.mjs",
+    "serve": "node tools/serve.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.10.0"
+  },
+  "license": "MIT"
+}
